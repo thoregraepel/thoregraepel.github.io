@@ -1,3 +1,4 @@
+---
 title: "Private traits and attributes are predictable from digital records of human behavior"
 collection: publications
 permalink: /publication/2013-02-12-Private-traits-and-attributes-are-predictable-from-digital-records-of-human-behavior
@@ -6,3 +7,4 @@ date: 2013-02-12
 venue: 'Proceedings of the National Academy of Sciences of the United States of America'
 paperurl: 'https://www.pnas.org/content/pnas/110/15/5802.full.pdf'
 citation: 'Michal Kosinski, David Stillwell, and Thore Graepel. (2013). &quot;Private traits and attributes are predictable from digital records of human behavior.&quot; <i>Proceedings of the National Academy of Sciences of the United States of America (PNAS)</i>. 110 (15) 5802-5805.'
+---
