@@ -6,5 +6,5 @@ excerpt: 'The game of chess is the longest-studied domain in the history of arti
 date: 2018-12-07
 venue: 'Science'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'David Silver, Thomas Hubert, Julian Schrittwieser, Ioannis Antonoglou, Matthew Lai, Arthur Guez, Marc Lanctot, Laurent Sifre, Dharshan Kumaran1, Thore Graepel, Timothy Lillicrap, Karen Simonyan, Demis Hassabis. (2015). &quot;A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play.&quot; <i>Science</i>. Vol. 362, Issue 6419, pp. 1140-1144.'
+citation: 'David Silver, Thomas Hubert, Julian Schrittwieser, Ioannis Antonoglou, Matthew Lai, Arthur Guez, Marc Lanctot, Laurent Sifre, Dharshan Kumaran, Thore Graepel, Timothy Lillicrap, Karen Simonyan, Demis Hassabis. (2018). &quot;A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play.&quot; <i>Science</i>. Vol. 362, Issue 6419, pp. 1140-1144.'
 ---
