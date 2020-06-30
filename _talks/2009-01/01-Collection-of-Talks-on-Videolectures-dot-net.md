@@ -2,9 +2,9 @@
 title: "Collection of Talks on Videolectures.net"
 collection: talks
 type: "Lecture"
-permalink: /talks/2009-2013-Collection-of-Talks-on-Videolectures.net
+permalink: /talks/2009-01-01-Collection-of-Talks-on-Videolectures.net
 venue: "Mixed venues"
-date: 2009-2013
+date: 2009-01-01
 location: "All over the world"
 ---
 [videolectures.net site](http://videolectures.net/thore_graepel/) Requires Adobe Flash Player
