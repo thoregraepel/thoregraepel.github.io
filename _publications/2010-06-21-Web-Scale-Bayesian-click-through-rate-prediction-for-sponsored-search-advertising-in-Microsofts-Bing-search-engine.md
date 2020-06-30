@@ -5,4 +5,4 @@ excerpt: 'We describe a new Bayesian click-through rate (CTR) prediction algorit
 date: 2010-06-21
 venue: 'International Conference on Machine Learning (ICML)'
 paperurl: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/06/AdPredictor-ICML-2010-final.pdf'
-citation: 'Thore Graepel, Joaquin Quinonero-Candela, Thomas Borchert, Ralf Herbrich. (2010). &quot;Web-Scale Bayesian click-through rate prediction for sponsored search advertising in Microsoft's Bing search engine&quot; <i>Proceedings of the 27th International Conference on Machine Learning (ICML-10)</i>. pages 13-20.'
+citation: 'Thore Graepel, Joaquin Quinonero-Candela, Thomas Borchert, Ralf Herbrich. (2010). &quot;Web-Scale Bayesian click-through rate prediction for sponsored search advertising in Microsoft&#39;s Bing search engine&quot; <i>Proceedings of the 27th International Conference on Machine Learning (ICML-10)</i>. pages 13-20.'
