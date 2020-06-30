@@ -7,6 +7,6 @@ venue: "DeepMind x UCL | Deep Learning Lectures, UCL, London"
 date: 2020-06-01
 location: "London, UK"
 ---
-[Video recording](https://www.youtube.com/watch?v=7R52wiUgxZI)
+[Video recording](https://www.youtube.com/watch?v=7R52wiUgxZI) and [Slides](https://storage.googleapis.com/deepmind-media/UCLxDeepMind_2020/L1%20-%20UCLxDeepMind%20DL2020.pdf)
 
 In this lecture DeepMind Research Scientist and UCL Professor Thore Graepel explains DeepMind's machine learning based approach towards AI. He examples of how deep learning and reinforcement learning can be combined to build intelligent systems, including AlphaGo, Capture The Flag, and AlphaStar. This is followed by a short introduction to the different topics and speakers coming up in the subsequent lectures.
