@@ -1,5 +1,5 @@
 ---
-title: "Deep Learning Lectures | 1/12 | Intro to Machine Learning & AI"
+title: "Deep Learning Lectures (1 of 12) Intro to Machine Learning & AI"
 collection: talks
 type: "Lecture"
 permalink: /talks/2020-06-01-Deep-Learning-Lectures-1-of-12-Intro-to-Machine-Learning-and-AI
