@@ -1,5 +1,5 @@
 ---
-title: "TrueSkill(TM): a Bayesian skill rating system"
+title: "Web-Scale Bayesian click-through rate prediction for sponsored search advertising in Microsofts Bing search engine"
 collection: publications
 permalink: /publication/2007-12-03-TrueSkill(TM)-a-Bayesian-skill-rating-system
 excerpt: 'We present a new Bayesian skill rating system which can be viewed as a generalisation of the Elo system used in Chess. The new system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team
