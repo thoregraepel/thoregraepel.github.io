@@ -7,7 +7,7 @@ venue: "AAMAS 2020 Keynote (remote)"
 date: 2020-05-12
 location: "Online"
 ---
-[Video recording of Automatic Curricula in Deep Multi-Agent Reinforcement Learning](https://underline.io/lecture/63-automatic-curricula-in-deep-multi-agent-reinforcement-learning)
+[Video recording](https://underline.io/lecture/63-automatic-curricula-in-deep-multi-agent-reinforcement-learning)
 
 Multi-agent systems are emerging as a crucial element in our pursuit of designing and building intelligent systems. In order to succeed in the real world artificial agents must be able to cooperate, communicate, and reason about other agents’ beliefs, intentions and behaviours. Furthermore, as system designers we need to think about composing intelligent systems from intelligent subsystems, a multi-agent approach inspired by the observation that intelligent agents like organisations or governments are composed of other agents. Last but not least, as a product of evolution intelligence did not emerge in isolation, but as a group phenomenon. Hence, it seems plausible that learning agents require interaction with other agents to develop intelligence.
 
