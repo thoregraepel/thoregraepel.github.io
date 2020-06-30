@@ -7,7 +7,7 @@ venue: "AAMAS/ICML 2018"
 date: 2018-07-10
 location: "Stockholm, Sweden"
 ---
-[Tutorial Site](https://sites.google.com/site/maltutorial2018/) and [Slides](https://www.karltuyls.net/wp-content/uploads/2020/06/MA-DM-ICML-ACAI.pdf) (or [here](https://thoregraepel.github.io/files/MA-DM-ICML-ACAI.pdf)
+[Tutorial Site](https://sites.google.com/site/maltutorial2018/) and [Slides](https://www.karltuyls.net/wp-content/uploads/2020/06/MA-DM-ICML-ACAI.pdf) (or [here](https://thoregraepel.github.io/files/MA-DM-ICML-ACAI.pdf))
 
 Tutorial speakers: David Balduzzi, Thore Graepel, Edward Hughes, Max Jaderberg, Julien Perolat, Karl Tuyls
 
