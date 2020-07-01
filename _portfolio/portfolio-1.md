@@ -1,7 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "TrueSkill Rating System"
+excerpt: "TrueSkill is a skill rating for games that generalises the popular Elo rating system known from chess to include uncertainty estimates of player ratings, to allow for estimating individual ratings from team outcomes, and to have more than two teams.<br/><img src='/images/TrueSkill-Factor-Graph.png'>"
 collection: portfolio
 ---
-
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+More details...
