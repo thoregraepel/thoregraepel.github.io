@@ -1,6 +1,6 @@
 ---
 title: "AlphaGo"
-excerpt: "AlphaGo is a computer program developed at DeepMind that plays the board game Go, and was the first computer program to beat a professional Go player - a decade before expected.<br/><img src='/images/TrueSkill-Factor-Graph.png'>"
+excerpt: "AlphaGo is a computer program developed at DeepMind that plays the board game Go, and was the first computer program to beat a professional Go player - a decade before expected.<br/><img src='/images/AlphaGo-Search-Tree.jpg'>"
 collection: portfolio
 ---
 I was fortunate to work on the team that created AlphaGo as well as its successors AlphaGoZero and AlphaZero - together with some incredibly talented individuals, and led by the brilliant [David Silver](https://www.davidsilver.uk/).
