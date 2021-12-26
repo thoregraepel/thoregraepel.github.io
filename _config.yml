@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Thore Graepel's Website"
+title                    : "Richard Chou's Website"
 title_separator          : "-"
-name                     : &name "Thore Graepel"
+name                     : &name "Richard Chou"
 description              : &description "personal description"
-url                      : https://thoregraepel.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://richardchou.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "thoregraepel/thoregraepel.github.io"
+repository               : "Rchou97/richardchou.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Thore Graepel"
+  name             : "Richard Chou"
   avatar           : "profile.png"
-  bio              : "Research Scientist at DeepMind and Professor of Machine Learning at UCL"
-  location         : "Cambridge and London"
+  bio              : "Process Engineer at Finaps and student of Information Studies: Data Science at the University of Amsterdam"
+  location         : "Amsterdam, The Netherlands"
   employer         :
-  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Thore+Graepel"
-  googlescholar    : "https://scholar.google.co.uk/citations?user=PNH24toAAAAJ&hl=en"
-  email            :
-  researchgate     : "https://www.researchgate.net/profile/Thore_Graepel" # example: "https://www.researchgate.net/profile/yourprofile"
+  pubmed           : 
+  googlescholar    : 
+  email            : "richard.chou@live.nl"
+  researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "thoregraepel"
+  github           : "Rchou97"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : 
   lastfm           :
-  linkedin         : "thoregraepel"
-  orcid            : "https://orcid.org/0000-0003-3957-0310"
+  linkedin         : "chourichard"
+  orcid            :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : "ThoreG"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
