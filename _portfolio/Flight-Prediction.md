@@ -3,7 +3,8 @@ title: "Flight Prediction Challenge - Kaggle"
 excerpt: "The goal in this Kaggle challenge is to predict the flight delays in the month July. Submissions were evaluated by using the Mean Squared Error (MSE) of the actual values minus the predicted arrival delay values of the machine learning model."
 collection: portfolio
 ---
-**December 2021**<br>
+**December 2021**
+
 The challenge was to predict the ARRIVAL_DELAY column. The training data, test data and some additional dataset were provided. Below, you may find some explanations for some of the data rows:
 
 * YEAR, MONTH, DAY, DAY_OF_WEEK: dates of the flight.
@@ -21,4 +22,4 @@ Classification was not appropriate for this context, so that is why we have went
 
 When comparing the three models based on computational time, performance in general, and the amount of features that was needed to get that performance, it was concluded that CatBoost was the best out of the three models. And then we have tweaked the model to generalise it better on both datasets. 
 
-For more information about the execution, feel free to go to the [flight_prediction_challenge repo](https://github.com/Rchou97/flight_prediction_challenge). 
+For more information about the execution, feel free to go to the [flight prediction challenge repo](https://github.com/Rchou97/flight_prediction_challenge) on my GitHub. 
