@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 Work experience
-======
+------
 * Finaps: Process Engineer (2019-present)
   * To actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
 
@@ -23,7 +23,7 @@ Work experience
   * Role was to actively contribute to Finaps' goal of creating insight, impact and trust for its clients within the field of information security.
 
 Volunteer experience
-======
+------
 * Volt Europe: Data Analyst (2021-present)
   * Support the data analytics team with dashboarding for different parties within Volt. 
 
@@ -31,7 +31,7 @@ Volunteer experience
   * Worked for one month as a volunteer for the KLM Curaçao Marathon, which was organised by the Run in the Sun Foundation.
 
 Education
-======
+------
 * M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
   * Current GPA: 8.0/10
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
@@ -39,7 +39,7 @@ Education
   * Final GPA: 7.3/10
   
 Technical Skills
-======
+------
 **Programming Skills** 
 * Python
   * Pandas
@@ -70,7 +70,7 @@ Technical Skills
 * ISO 27001
 
 Languages
-======
+------
 * Dutch (Fluent) 
 * English (Advanced) 
 * Mandarin (Basic)
