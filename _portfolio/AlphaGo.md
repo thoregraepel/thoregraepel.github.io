@@ -1,21 +1,23 @@
 ---
-title: "AlphaGo"
-excerpt: "AlphaGo is a computer program developed at DeepMind that plays the board game Go, and was the first computer program to beat a professional Go player - a decade before expected.<br/><img src='/images/AlphaGo-Search-Tree.jpg'>"
+title: "Flight Prediction Challenge - Kaggle"
+excerpt: "The goal in this Kaggle challenge is to predict the flight delays in the month July. Submissions were evaluated by using the Mean Squared Error (MSE) of the actual values minus the predicted arrival delay values of the machine learning model."
 collection: portfolio
 ---
-I was fortunate to work on the team that created AlphaGo as well as its successors AlphaGoZero and AlphaZero - together with some incredibly talented individuals, and led by the brilliant [David Silver](https://www.davidsilver.uk/).
-You can find more details about AlphaGo, its history, and further developments on the [AlphaGo page at DeepMind](https://deepmind.com/research/case-studies/alphago-the-story-so-far) and the [AlphaGo Wikipedia page](https://en.wikipedia.org/wiki/AlphaGo). You can watch me give a very short explanation of how AlphaGo works in the video [How Google Deepmind AlphaGo works](https://www.youtube.com/watch?v=gyBvXDLYFfg).
+The challenge was to predict the ARRIVAL_DELAY column. The training data, test data and some additional dataset were provided. Below, you may find some explanations for some of the data rows:
 
-The original AlphaGo work is described in the paper [Mastering the game of Go with deep neural networks and tree search](publication/2016-01-27-Mastering-the-game-of-Go-with-deep-neural-networks-and-tree-search). In our follow up work, we removed the necessity for human data and other heuristics, resulting in the even stronger player AlphaGoZero described in the paper [Mastering the game of Go without human knowledge](https://thoregraepel.github.io/publication/2017-10-19-Mastering-the-game-of-Go-without-human-knowledge). In order to demonstrate that the methodology was not limited to the game of Go, but extended to other perfect information two player zero-sum games, we developed, AlphaZero, described in the paper [A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play](https://thoregraepel.github.io/publication/2018-12-07-A-general-reinforcement-learning-algorithm-that-masters-chess-shogi-and-Go-through-self-play).
+* YEAR, MONTH, DAY, DAY_OF_WEEK: dates of the flight.
+* AIRLINE: an identification number assigned by US DOT to identify a unique airline.
+* ORIGIN_AIRPORT, DESTINATION_AIRPORT: code attributed by IATA to identify the airports.
+* SCHEDULED_DEPARTURE, SCHEDULED_ARRIVAL: scheduled times of take-off and landing.
+* DEPARTURE_TIME: real times at which take-off took place.
+* DISTANCE: distance (in miles).
 
-While the work up to this point had assumed that a simulator for the game was available, we recently extended AlphaZero to be able to estimate the transition model and rewards of a game, resulting in the MuZero algorithm described in the paper [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](https://arxiv.org/abs/1911.08265). To demonstrate this new modelling capability, we show strong results on Atari games - a benchmark first introduced in the [Arcade Learning Environment](https://arxiv.org/abs/1207.4708).
+Classification was not appropriate for this context, so that is why we have went for regression models. We have applied multiple regression models and see the performances of each model if it is suiting within the context of the datasets that we have received. In this case, we have used the following machine learning frameworks from different libraries: 
 
-The wonderful director [Greg Kohs](https://www.reelasdirt.com/gregkohs) made a wonderful feature-film length documentary about AlphaGo and its historic matches against Fang Hui and Lee Sedol, which is available on Youtube - [AlphaGo](https://www.youtube.com/watch?v=WXuK6gekU1Y). Watching it always makes me relive those incredible days in London and Seoul when AlphaGo was developed and made its mark.
+* [Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
+* [XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_api.html)
+* [CatBoost](https://catboost.ai/en/docs/concepts/python-reference_catboostregressor)
 
-The AlphaZero work has inspired a number of books including Max Pumperla's and Kevin Furgeson's [Deep Learning and the Game of Go](https://livebook.manning.com/book/deep-learning-and-the-game-of-go/about-this-book/), for which I had the pleasure of writing the foreword. The book provides a wonderful introduction to the world of deep learning, reinforcement learning and tree search, all based on the game of Go. Also, [Michael Redmond](https://en.wikipedia.org/wiki/Michael_Redmond_(Go_player)), professional 9 dan Go player, and [Chris Garlock](https://www.laborheritage.org/chris-garlocks-biography/), who provided the engaging and competent on-site commentary for the AlphaGo vs Lee Sedol matches in Seoul, have written the book AlphaGo to Zero - The Complete Games, which is available [here](https://gobooks.com/).
+When comparing the three models based on computational time, performance in general, and the amount of features that was needed to get that performance, it was concluded that CatBoost was the best out of the three models. And then we have tweaked the model to generalise it better on both datasets. 
 
-There are also some great videos with AlphaGo match commentaries on Youtube - a good starting point is the [Youtube channel of the American Go Association (AGA)](https://www.youtube.com/channel/UCR3qjXCiYEokW7bW3HkFzfg), where Michael and Chris show some great commented games.
-
-For chess fans, there is a wonderful book by [Matthew Sadler](https://en.wikipedia.org/wiki/Matthew_Sadler) and [Natasha Regan](https://www.amazon.co.uk/Natasha-Regan/e/B0034P7H7C) with the title [Game Changer: AlphaZero's Groundbreaking Chess Strategies and the Promise of AI](https://books.google.co.uk/books?id=KhhivwEACAAJ&dq=game+changer&hl=en&sa=X&ved=2ahUKEwiG9tmfipHrAhW0SEEAHXSBB0MQ6AEwCXoECAcQAg). It explores all the new chess knowledge that AlphaZero created, and puts it into the context of the play of human chess masters.
-
-If you prepare videos, there are also some great AlphaZero chess videos on Youtube, for example Matthew Saddler's commentary ["Exactly How to Attack"](https://www.youtube.com/watch?v=bo5plUo86BU). My favourite game is [Alpha Zero's "Immortal Zugzwang Game" against Stockfish](https://www.youtube.com/watch?v=lFXJWPhDsSY&t=702s) - watch until the end!
+For more information about the execution, feel free to go to the [flight_prediction_challenge repo](https://github.com/Rchou97/flight_prediction_challenge). 

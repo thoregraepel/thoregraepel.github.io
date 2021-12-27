@@ -24,18 +24,16 @@ Work experience
 
 Volunteer experience
 ======
-* 2021-present: Data Analyst
-  * Volt Europe
+* Volt Europe: Data Analyst (2021-present)
   * Support the data analytics team with dashboarding for different parties within Volt. 
 
-* 2017: Volunteer Staff 
-  * KLM/Run in the Sun Foundation
-  * Worked as a volunteer for the KLM Curaçao Marathon, which was organised by the Run in the Sun Foundation.
+* KLM/Run in the Sun Foundation: Volunteer Staff (2017) 
+  * Worked for one month as a volunteer for the KLM Curaçao Marathon, which was organised by the Run in the Sun Foundation.
 
 Education
 ======
 * M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
-* M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
+* M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
 * B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018
   
 Skills
@@ -57,8 +55,7 @@ Skills
   * Google Data Studio
 * LaTeX
   * Overleaf
-* Information security
-* GDPR-knowledge 
+* Information security/GDPR
 * MS Office 
 
 Education
