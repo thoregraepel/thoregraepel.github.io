@@ -33,11 +33,14 @@ Volunteer experience
 Education
 ======
 * M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
+  * Current GPA: 8.0/10
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
-* B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018
+* B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
+  * Final GPA: 7.3/10
   
-Skills
+Technical Skills
 ======
+**Programming Skills** 
 * Python
   * Pandas
   * Matplotlib/Seaborn
@@ -45,20 +48,28 @@ Skills
   * NumPy/SciPy
   * Plotly/Dash
   * PySpark 
-* SQL
-  * PostgreSQL
 * R
   * Tidyverse
+
+**Query Languages** 
+* SQL
+  * PostgreSQL
 * Cypher 
   * Neo4J
+
+**Software** 
 * Dashboard tools
   * Google Data Studio
 * LaTeX
   * Overleaf
-* Information security/GDPR
 * MS Office 
 
-Education
+**Security**
+* GDPR
+* Information security
+* ISO 27001
+
+Languages
 ======
 * Dutch (Fluent) 
 * English (Advanced) 
