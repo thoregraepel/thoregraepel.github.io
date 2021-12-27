@@ -11,17 +11,14 @@ redirect_from:
 
 Work experience
 ======
-* Finaps
-* 2019-present: Process Engineer
+* Finaps: Process Engineer (2019-present)
   * To actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
 
-* Accenture
-* 2018-2019: Application Development Associate
+* Accenture: Application Development Associate (2018-2019)
   * Started as an undergraduate intern. Research topic: scoped on data security tooling and best practices to ensure GDPR-compliance in the data security segment. 
   * Project role was at the business operations side as a PMO practitioner, which was delivering account support at one of Accenture's Dutch accounts.
 
-* Finaps
-* 2016-2017: Junior Information Security Specialist
+* Finaps: Junior Information Security Specialist (2016-2017)
   * Started as an intern. Research topic: design and implementation of the ISO 27001 framework.
   * Role was to actively contribute to Finaps' goal of creating insight, impact and trust for its clients within the field of information security.
 
