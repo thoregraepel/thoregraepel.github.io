@@ -40,7 +40,7 @@ Education
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
   * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*  
 * B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
-  * Taken courses: *Enterpise Resource Planning*, *CRM & Selecting*, *Project Business Systems*, *Business Process Management Systems*, *Change and Consultancy Skills*, *University Project*, *Execute Your Own Project*, *Performance Management*, *Business IT Alignment*, *IT Service Management*, *Applied Research and Professional Skills 3*, *Internship*, *Business Environment*, *Business Development and Design*, *Big Data*, *Digital Company*, *Social Media Communication*, and *Graduation Assignment*. 
+  * Taken courses: *Enterprise Resource Planning*, *CRM & Selecting*, *Project Business Systems*, *Business Process Management Systems*, *Change and Consultancy Skills*, *University Project*, *Execute Your Own Project*, *Performance Management*, *Business IT Alignment*, *IT Service Management*, *Applied Research and Professional Skills 3*, *Internship*, *Business Environment*, *Business Development and Design*, *Big Data*, *Digital Company*, *Social Media Communication*, and *Graduation Assignment*. 
   * Minor: Sport and Entertainment Marketing 
   * Final GPA: 7.3/10
   
@@ -69,6 +69,7 @@ Technical Skills
 * LaTeX
   * Overleaf
 * MS Office 
+* Docker
 
 **Security**
 * GDPR
