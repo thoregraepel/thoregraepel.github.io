@@ -12,7 +12,8 @@ redirect_from:
 Work experience
 ------
 * Finaps: Process Engineer (2019-present)
-  * To actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
+  * Actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
+  * Mainly active in the fields of information security and quality management. 
 
 * Accenture: Application Development Associate (2018-2019)
   * Started as an undergraduate intern. Research topic: scoped on data security tooling and best practices to ensure GDPR-compliance in the data security segment. 
@@ -26,6 +27,7 @@ Volunteer experience
 ------
 * Volt Europe: Data Analyst (2021-present)
   * Support the data analytics team with dashboarding for different parties within Volt. 
+  * Used technologies: Python, PostgreSQL, and Google Data Studio
 
 * KLM/Run in the Sun Foundation: Volunteer Staff (2017) 
   * Worked for one month as a volunteer for the KLM Curaçao Marathon, which was organised by the Run in the Sun Foundation.
@@ -33,9 +35,13 @@ Volunteer experience
 Education
 ------
 * M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
+  * Current courses: *Fundamentals of Data Science*, *Statistics, Simulation and Optimisation*, and *Applied Machine Learning*
   * Current GPA: 8.0/10
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
+  * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*  
 * B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
+  * Taken courses: *Enterpise Resource Planning*, *CRM & Selecting*, *Project Business Systems*, *Business Process Management Systems*, *Change and Consultancy Skills*, *University Project*, *Execute Your Own Project*, *Performance Management*, *Business IT Alignment*, *IT Service Management*, *Applied Research and Professional Skills 3*, *Internship*, *Business Environment*, *Business Development and Design*, *Big Data*, *Digital Company*, *Social Media Communication*, and *Graduation Assignment*. 
+  * Minor: Sport and Entertainment Marketing 
   * Final GPA: 7.3/10
   
 Technical Skills
