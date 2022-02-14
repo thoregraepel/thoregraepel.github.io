@@ -15,7 +15,7 @@ Work experience
   * Actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
   * Mainly active in the fields of information security and quality management. 
 
-* Accenture: Application Development Associate (2018-2019)
+* Accenture: Associate (2018-2019)
   * Started as an undergraduate intern. Research topic: scoped on data security tooling and best practices to ensure GDPR-compliance in the data security segment. 
   * Project role was at the business operations side as a PMO practitioner, which was delivering account support at one of Accenture's Dutch accounts.
 
