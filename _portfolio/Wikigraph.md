@@ -1,6 +1,6 @@
 ---
-title: "Transfer Graph of Wiki pages - University Project"
-excerpt: "The goal in this individual project is to develop a scalable program that process the history of Wikipedia pages and generate a temporal similarity graph. The program reads a configuration file at the beginning to set the values of the different parameters that are required, like for example the threshold $th_{sim}$ (similarity of the pages). Since it was difficult to extract all the topics from Wikipedia (my computer would break), I have chosen to go for the pages and version history of the category "Business Intelligence"."
+title: "Transfer Graph of Wiki pages - Uni Project"
+excerpt: "Goal in this individual project is to develop a scalable program that process the history of Wikipedia pages and generate a temporal similarity graph."
 collection: portfolio
 ---
 **June 2021**
