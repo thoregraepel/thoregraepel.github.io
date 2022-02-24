@@ -54,12 +54,17 @@ Technical Skills
   * NumPy/SciPy
   * Plotly/Dash
   * PySpark 
+  * XGBoost
+  * LightGBM
+  * AdaBoost
+  * CatBoost
 * R
   * Tidyverse (contains ggplot2, dplyr, tidyr, readr, and tibble)
 
 **Query Languages** 
 * SQL
   * PostgreSQL
+  * DuckDB
 * Cypher 
   * Neo4J
 
