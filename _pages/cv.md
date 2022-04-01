@@ -11,9 +11,12 @@ redirect_from:
 
 Work experience
 ------
-* Finaps: Process Engineer (2019-present)
+* Coolblue: Data Science Intern (2022-present)
+  * Collaborate with the forecasting data team to forecast potential sales in different product groups.
+
+* Finaps: Process Engineer (2019-2022)
   * Actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
-  * Mainly active in the fields of information security and quality management. 
+  * Mainly active in the fields of information security and quality management.
 
 * Accenture: Associate (2018-2019)
   * Started as an undergraduate intern. Research topic: scoped on data security tooling and best practices to ensure GDPR-compliance in the data security segment. 
@@ -47,14 +50,14 @@ Education
   
 Technical Skills
 ------
-**Programming Skills** 
+**Programming Skills**
 * Python
   * Pandas
   * Matplotlib/Seaborn
-  * Scikit-Learn 
+  * Scikit-Learn
   * NumPy/SciPy
   * Plotly/Dash
-  * PySpark 
+  * PySpark
   * XGBoost
   * LightGBM
   * AdaBoost
@@ -62,11 +65,11 @@ Technical Skills
 * R
   * Tidyverse (contains ggplot2, dplyr, tidyr, readr, and tibble)
 
-**Query Languages** 
+**Query Languages**
 * SQL
   * PostgreSQL
   * DuckDB
-* Cypher 
+* Cypher
   * Neo4J
 
 **Software** 
@@ -84,6 +87,6 @@ Technical Skills
 
 Languages
 ------
-* Dutch (Fluent) 
-* English (Advanced) 
+* Dutch (Fluent)
+* English (Advanced)
 * Mandarin (Basic)
