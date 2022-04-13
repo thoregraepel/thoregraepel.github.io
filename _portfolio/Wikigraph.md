@@ -16,4 +16,4 @@ The technologies and libraries that were used for this project were:
 * Cypher 
    * Neo4J  
 
-For more information about the execution and the findings within the report, feel free to go to the [wikigraph repo](https://https://github.com/Rchou97/wikigraph) on my GitHub profile. 
+For more information about the execution and the findings within the report, feel free to go to the [wikigraph repo](https://github.com/Rchou97/wikigraph-project) on my GitHub profile. 
