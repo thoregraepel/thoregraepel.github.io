@@ -40,7 +40,7 @@ Education
 * M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
   * Current courses: *Fundamentals of Data Science*, *Statistics, Simulation and Optimisation*, *Applied Machine Learning*, *Data Systems Project*, *Causal Data Science*, *Big Data* and *Master Thesis*
   * Thesis subject: *Detecting and classifying hate speech memes in Twitter posts*
-  * Current GPA: 7.6/10
+  * Current GPA: 7.3/10
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
   * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*  
 * B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
@@ -69,6 +69,7 @@ Technical Skills
 * SQL
   * PostgreSQL
   * DuckDB
+  * BigQuery
 * Cypher
   * Neo4J
 
