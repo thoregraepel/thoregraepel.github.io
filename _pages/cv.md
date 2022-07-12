@@ -12,7 +12,7 @@ redirect_from:
 Work experience
 ------
 * Coolblue: Data Science Intern (2022-present)
-  * Collaborate with the forecasting data team to forecast potential sales in different product groups.
+  * Collaborate with the forecasting data team to forecast potential sales in one of the product types.
 
 * Finaps: Process Engineer (2019-2022)
   * Actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
@@ -39,7 +39,7 @@ Education
 ------
 * M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
   * Current courses: *Fundamentals of Data Science*, *Statistics, Simulation and Optimisation*, *Applied Machine Learning*, *Data Systems Project*, *Causal Data Science*, *Big Data* and *Master Thesis*
-  * Thesis subject: *Detecting and classifying hate speech memes in Twitter posts*
+  * Thesis subject: *Detecting and classifying cyberbullying memes in Twitter posts*
   * Current GPA: 7.3/10
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
   * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*  
