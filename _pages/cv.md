@@ -12,7 +12,7 @@ redirect_from:
 Work experience
 ------
 * Coolblue: Data Science Intern (2022-present)
-  * Collaborate with the forecasting data team to forecast potential sales in one of the product types.
+  * Collaborate with the forecasting data team to forecast potential sales in multiple seasonal product types of Coolblue.
 
 * Finaps: Process Engineer (2019-2022)
   * Actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
@@ -29,7 +29,7 @@ Work experience
 Volunteer experience
 ------
 * Volt Europe: Data Analyst (2021-present)
-  * Support the data analytics team with dashboarding for different parties within Volt. 
+  * Support the data analytics team with dashboarding for different parties within Volt.
   * Used technologies: Python, PostgreSQL, and Google Data Studio
 
 * KLM/Run in the Sun Foundation: Volunteer Staff (2017) 
@@ -44,8 +44,8 @@ Education
 * M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
   * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*  
 * B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
-  * Taken courses: *Enterprise Resource Planning*, *CRM & Selecting*, *Project Business Systems*, *Business Process Management Systems*, *Change and Consultancy Skills*, *University Project*, *Execute Your Own Project*, *Performance Management*, *Business IT Alignment*, *IT Service Management*, *Applied Research and Professional Skills 3*, *Internship*, *Business Environment*, *Business Development and Design*, *Big Data*, *Digital Company*, *Social Media Communication*, and *Graduation Assignment*. 
-  * Minor: Sport and Entertainment Marketing 
+  * Taken courses: *Enterprise Resource Planning*, *CRM & Selecting*, *Project Business Systems*, *Business Process Management Systems*, *Change and Consultancy Skills*, *University Project*, *Execute Your Own Project*, *Performance Management*, *Business IT Alignment*, *IT Service Management*, *Applied Research and Professional Skills 3*, *Internship*, *Business Environment*, *Business Development and Design*, *Big Data*, *Digital Company*, *Social Media Communication*, and *Graduation Assignment*.
+  * Minor: Sport and Entertainment Marketing
   * Final GPA: 7.3/10
   
 Technical Skills
@@ -62,8 +62,14 @@ Technical Skills
   * LightGBM
   * AdaBoost
   * CatBoost
+  * Shap
 * R
-  * Tidyverse (contains ggplot2, dplyr, tidyr, readr, and tibble)
+  * Tidyverse, contains: 
+    * ggplot2
+    * dplyr 
+    * tidyr 
+    * readr
+    * tibble
 
 **Query Languages**
 * SQL
@@ -73,13 +79,14 @@ Technical Skills
 * Cypher
   * Neo4J
 
-**Software** 
+**Software**
 * Dashboard tools
   * Google Data Studio
 * LaTeX
   * Overleaf
-* MS Office 
+* MS Office
 * Docker
+* Amazon SageMaker Ground Truth
 
 **Security**
 * GDPR
