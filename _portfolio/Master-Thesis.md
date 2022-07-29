@@ -1,5 +1,5 @@
 ---
-title: "Master Thesis - Kaggle"
+title: "Master Thesis - Uni Project"
 excerpt: "The research was focused on multi-modal classification models applied on Twitter data with the aim to detect cyberbullying sentiment out of memes."
 collection: portfolio
 ---
@@ -13,3 +13,7 @@ For this research, I have used the following repositories that were able to dete
 * [VisualBERT](https://github.com/rizavelioglu/hateful_memes-hate_detectron)
 
 For more information about the execution, feel free to go to the [Master Thesis repo](https://github.com/Rchou97/master-thesis-2022) on my GitHub profile. There is also the link to the full report.
+
+**References** 
+[1] N. Muennighoff (2020), Vilio: State-of-the-art Visio-Linguistic Models applied to Hateful Memes. Retrieved from https://arxiv.org/abs/2012.07788 
+[2] R. Velioglu and J. Rose (2020), Detecting Hate Speech in Memes Using Multimodal Deep Learning Approaches: Prize-winning solution to Hateful Memes Challenge. Retrieved from https://arxiv.org/abs/2012.12975.
