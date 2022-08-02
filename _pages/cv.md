@@ -37,7 +37,7 @@ Volunteer experience
 
 Education
 ------
-* M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022 (expected)
+* M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022
   * Current courses: *Fundamentals of Data Science*, *Statistics, Simulation and Optimisation*, *Applied Machine Learning*, *Data Systems Project*, *Causal Data Science*, *Big Data* and *Master Thesis*
   * Thesis subject: *Detecting and classifying cyberbullying memes in Twitter posts*
   * Current GPA: 7.3/10

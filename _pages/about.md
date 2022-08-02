@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi! Welcome to my personal GitHub website. I am currently a data science intern at Coolblue. Next to that, I am also a master student in Information Studies: Data Science at the [University of Amsterdam (UVA)](https://www.uva.nl/en/programmes/masters/information-studies-data-science/data-science.html). I have got a background in Business Informatics during my undergraduate studies at the [Hogeschool Utrecht (HU)](https://www.hu.nl/voltijd-opleidingen/hbo-ict) and one year of graduate studies at the [Utrecht University (UU)](https://www.uu.nl/masters/en/business-informatics).
+Hi! Welcome to my personal GitHub website. I am currently a data science intern at Coolblue. I have got a background in Business Informatics during my undergraduate studies at the [Hogeschool Utrecht (HU)](https://www.hu.nl/voltijd-opleidingen/hbo-ict) and one year of graduate studies at the [Utrecht University (UU)](https://www.uu.nl/masters/en/business-informatics). Recently majored in the graduate studies of Information Studies: Data Science at the [University of Amsterdam (UVA)](https://www.uva.nl/en/programmes/masters/information-studies-data-science/data-science.html)
 
 Interests
 ======
