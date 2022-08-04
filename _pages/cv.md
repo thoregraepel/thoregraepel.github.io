@@ -37,13 +37,15 @@ Volunteer experience
 
 Education
 ------
-* M.S. in Information Studies: Data Science, University of Amsterdam, 2021-2022
+* MSc. in Information Studies: Data Science, University of Amsterdam, 2021-2022
   * Current courses: *Fundamentals of Data Science*, *Statistics, Simulation and Optimisation*, *Applied Machine Learning*, *Data Systems Project*, *Causal Data Science*, *Big Data* and *Master Thesis*
   * Thesis subject: *Detecting and classifying cyberbullying memes in Twitter posts*
-  * Current GPA: 7.3/10
-* M.S. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
-  * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*  
-* B.S. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
+  * Final GPA: 7.4/10
+
+* MSc. in Business Informatics (not completed: 61,5/120 ECTS, completed Applied Data Science profile: 45/30 ECTS), Utrecht University, 2020-2021
+  * Taken courses: *Introducing Natural Sciences*, *Introduction to Business Informatics*, *Method Engineering*, *Data Science and Society*, *Big Data*, *Business Intelligence*, *Data Analysis and Visualisation*, *Algorithms in Finance*, and *Data Intensive Systems*
+
+* BSc. in Business, IT & Management (currently HBO-ICT), Hogeschool Utrecht, 2014-2018 
   * Taken courses: *Enterprise Resource Planning*, *CRM & Selecting*, *Project Business Systems*, *Business Process Management Systems*, *Change and Consultancy Skills*, *University Project*, *Execute Your Own Project*, *Performance Management*, *Business IT Alignment*, *IT Service Management*, *Applied Research and Professional Skills 3*, *Internship*, *Business Environment*, *Business Development and Design*, *Big Data*, *Digital Company*, *Social Media Communication*, and *Graduation Assignment*.
   * Minor: Sport and Entertainment Marketing
   * Final GPA: 7.3/10
@@ -64,10 +66,10 @@ Technical Skills
   * CatBoost
   * Shap
 * R
-  * Tidyverse, contains: 
+  * Tidyverse, contains:
     * ggplot2
-    * dplyr 
-    * tidyr 
+    * dplyr
+    * tidyr
     * readr
     * tibble
 
