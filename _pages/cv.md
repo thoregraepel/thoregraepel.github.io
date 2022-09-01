@@ -11,28 +11,30 @@ redirect_from:
 
 Work experience
 ------
-* Coolblue: Data Science Intern (2022-present)
+* De Volksbank: Junior Data Engineer BI (September 2022 - Present)
+
+* Coolblue: Data Science Intern (March 2022 - August 2022)
   * Collaborate with the forecasting data team to forecast potential sales in multiple seasonal product types of Coolblue.
 
-* Finaps: Process Engineer (2019-2022)
+* Finaps: Process Engineer (November 2019 - April 2022)
   * Actively contribute to Finaps' goal of creating insight, impact and trust for our clients.
   * Mainly active in the fields of information security and quality management.
 
-* Accenture: Associate (2018-2019)
+* Accenture: Associate (March 2018 - September 2019)
   * Started as an undergraduate intern. Research topic: scoped on data security tooling and best practices to ensure GDPR-compliance in the data security segment. 
   * Project role was at the business operations side as a PMO practitioner, which was delivering account support at one of Accenture's Dutch accounts.
 
-* Finaps: Junior Information Security Specialist (2016-2017)
+* Finaps: Junior Information Security Specialist (August 2016 - December 2017)
   * Started as an intern. Research topic: design and implementation of the ISO 27001 framework.
   * Role was to actively contribute to Finaps' goal of creating insight, impact and trust for its clients within the field of information security.
 
 Volunteer experience
 ------
-* Volt Europe: Data Analyst (2021-present)
+* Volt Europe: Data Analyst (August 2021 - present)
   * Support the data analytics team with dashboarding for different parties within Volt.
   * Used technologies: Python, PostgreSQL, and Google Data Studio
 
-* KLM/Run in the Sun Foundation: Volunteer Staff (2017) 
+* KLM/Run in the Sun Foundation: Volunteer Staff (November 2017) 
   * Worked for one month as a volunteer for the KLM Curaçao Marathon, which was organised by the Run in the Sun Foundation.
 
 Education
