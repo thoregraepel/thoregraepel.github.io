@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+For my resume in PDF format, you can find it [here](https://rchou97.github.io/Richard_Chou_CV_011022.pdf).
+
 Work experience
 ------
 * De Volksbank: Junior Data Engineer BI (September 2022 - Present)
