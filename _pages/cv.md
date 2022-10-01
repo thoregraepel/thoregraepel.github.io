@@ -12,6 +12,7 @@ redirect_from:
 Work experience
 ------
 * De Volksbank: Junior Data Engineer BI (September 2022 - Present)
+  * Working on the dashboarding and data warehousing of De Volksbank within the Risk & Compliance domain. 
 
 * Coolblue: Data Science Intern (March 2022 - August 2022)
   * Collaborate with the forecasting data team to forecast potential sales in multiple seasonal product types of Coolblue.
@@ -78,7 +79,7 @@ Technical Skills
 **Query Languages**
 * SQL
   * PostgreSQL
-  * DuckDB
+  * Teradata
   * BigQuery
 * Cypher
   * Neo4J
@@ -86,6 +87,7 @@ Technical Skills
 **Software**
 * Dashboard tools
   * Google Data Studio
+  * Tableau
 * LaTeX
   * Overleaf
 * MS Office
