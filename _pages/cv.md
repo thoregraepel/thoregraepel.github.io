@@ -88,7 +88,7 @@ Technical Skills
 
 **Software**
 * Dashboard tools
-  * Google Data Studio
+  * Looker Studio
   * Tableau
 * LaTeX
   * Overleaf
