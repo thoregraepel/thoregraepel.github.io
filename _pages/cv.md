@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-For my resume in PDF format, you can find it [here](https://rchou97.github.io/Richard_Chou_CV_011022.pdf).
+For my resume in PDF format, you can find it [here](https://rchou97.github.io/Richard_Chou_CV_231022.pdf).
 
 Work experience
 ------
@@ -35,7 +35,7 @@ Volunteer experience
 ------
 * Volt Europe: Data Analyst (August 2021 - present)
   * Support the data analytics team with dashboarding for different parties within Volt.
-  * Used technologies: Python, PostgreSQL, and Google Data Studio
+  * Used technologies: Python, PostgreSQL, and Looker Studio
 
 * KLM/Run in the Sun Foundation: Volunteer Staff (November 2017) 
   * Worked for one month as a volunteer for the KLM Curaçao Marathon, which was organised by the Run in the Sun Foundation.
@@ -88,7 +88,7 @@ Technical Skills
 
 **Software**
 * Dashboard tools
-  * Google Data Studio
+  * Looker Studio
   * Tableau
 * LaTeX
   * Overleaf
