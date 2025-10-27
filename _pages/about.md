@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I have returned to Google DeepMind as Distinguished Research Scientist to understand what the future might look like in a post-AGI world and to help bring about a future in which AGI supports human flourishing.
+I have returned to [Google DeepMind](https://deepmind.com/) as Distinguished Research Scientist to understand what the future might look like in a post-AGI world and to help bring about a future in which AGI supports human flourishing. I also support the [Cooperative AI Foundation (CAIF)](https://www.cooperativeai.com/foundation) and I serve as a governor of the [London Institute for Mathematical Sciences (LIMS)](https://lims.ac.uk/).
 
 I also hold a part-time position as Chair of Machine Learning at the [Computer Science Department of University College London (UCL)](https://www.ucl.ac.uk/computer-science/). 
 
