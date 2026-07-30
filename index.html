@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thore Graepel — Reasoning · AlphaGo · Robotics</title>
+<meta name="description" content="Thore Graepel — machine learning researcher. Probabilistic reasoning (TrueSkill, AdPredictor, Matchbox), AlphaGo & AlphaZero, and multi-agent games. Now building AlphaGo-style reasoning for robots." />
+<meta property="og:title" content="Thore Graepel — Reasoning · AlphaGo · Robotics" />
+<meta property="og:description" content="Probabilistic reasoning, AlphaGo & AlphaZero, and multi-agent robotics — building AlphaGo-style reasoning for the physical world." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/profile.png" />
+<meta name="theme-color" content="#c1452c" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ░░░ NAV ░░░ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Thore Graepel — home">
+    <span class="stone stone--black" aria-hidden="true"></span>
+    <span class="nav__name">Thore Graepel</span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#reasoning">Reasoning</a>
+    <a href="#alphago">AlphaGo</a>
+    <a href="#agents">Agents</a>
+    <a href="#other">Other</a>
+    <a href="#experiments">Experiments</a>
+    <a href="#talks">Talks</a>
+    <a href="#writing">Writing</a>
+    <a href="#institutions">Institutions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark / light">
+    <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="5.2" y1="5.2" x2="6.9" y2="6.9"/><line x1="17.1" y1="17.1" x2="18.8" y2="18.8"/><line x1="18.8" y1="5.2" x2="17.1" y2="6.9"/><line x1="6.9" y1="17.1" x2="5.2" y2="18.8"/></g></svg>
+    <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" fill="currentColor"/></svg>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- ░░░ HERO ░░░ -->
+<section class="hero" id="hero">
+  <div class="hero__intro reveal">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Probabilistic reasoning · AlphaGo · Robotics</p>
+    <h1 class="hero__title">Thore&nbsp;Graepel</h1>
+    <p class="hero__tag">I build machines that <em>reason</em> and <em>act</em> — from probabilistic inference at web scale, through <em>AlphaGo</em>, to a new venture bringing AlphaGo-style reasoning to robots.</p>
+    <p class="hero__affil">
+      Chair of Machine Learning, <a href="https://www.ucl.ac.uk/computer-science/">UCL</a>
+    </p>
+    <div class="hero__cta">
+      <a class="btn" href="#about">About me</a>
+    </div>
+    <ul class="sociallist" aria-label="Profiles">
+      <li><a href="https://scholar.google.co.uk/citations?user=PNH24toAAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar">Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0003-3957-0310" title="ORCID" aria-label="ORCID">ORCID</a></li>
+      <li><a href="https://www.linkedin.com/in/thoregraepel" title="LinkedIn" aria-label="LinkedIn">LinkedIn</a></li>
+      <li><a href="https://twitter.com/ThoreG" title="X / Twitter" aria-label="X, formerly Twitter">X</a></li>
+      <li><a href="https://github.com/thoregraepel" title="GitHub" aria-label="GitHub">GitHub</a></li>
+    </ul>
+  </div>
+
+  <div class="hero__board reveal">
+    <figure class="goban">
+      <canvas id="goban" width="620" height="620" role="img" aria-label="A 19×19 Go board showing the position after AlphaGo's Move 37 against Lee Sedol, Game 2, 2016. The famous move is highlighted."></canvas>
+      <figcaption class="goban__hint">
+        <span class="goban__hint-text"><strong>AlphaGo vs. Lee Sedol</strong> · Game 2, 2016 · <span id="gobanCaption">Move 37 · AlphaGo's shoulder hit at P10</span></span>
+        <div class="goban__actions">
+          <span class="goban__controls">
+            <button id="gobanReplay" class="goban__clear" type="button">↺ replay</button>
+            <button id="gobanPlayOn" class="goban__clear" type="button">play on ▷</button>
+          </span>
+          <a class="btn btn--primary btn--sm" href="#alphago">The AlphaGo story →</a>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ░░░ ABOUT ░░░ -->
+<section class="section" id="about">
+  <div class="section__head reveal">
+    <span class="section__num">00</span>
+    <h2 class="section__title">Reasoning, from factor graphs to robots</h2>
+  </div>
+  <div class="about">
+    <div class="about__lede reveal">
+      <figure class="about__portrait">
+        <img src="images/thore.jpg" alt="Thore Graepel" width="300" height="300" loading="lazy" />
+      </figure>
+      <p>I am a machine-learning researcher who has spent a career teaching machines to <strong>reason under uncertainty</strong> and to <strong>act</strong> in the world. I trained as a physicist — in Hamburg, at Imperial College London, and in Berlin, where I earned my PhD in machine learning in 2001. At Microsoft Research from 2003 I co-founded the Online Services and Advertising group, where probabilistic reasoning shipped at scale: <strong>TrueSkill</strong>, the Bayesian rating system behind matchmaking on Xbox Live, and <strong>AdPredictor</strong>, the click-through model behind Bing — both built on approximate message passing over factor graphs.</p>
+      <p>At <a href="https://deepmind.com/">DeepMind</a> I returned to my first love — creating intelligent systems — and had the fortune to contribute to <strong>AlphaGo</strong>, the first program to defeat a professional at the full-sized game of Go, and to its successors <strong>AlphaGo&nbsp;Zero</strong>, <strong>AlphaZero</strong> and <strong>MuZero</strong>. There, learned reasoning met deep search: a policy that suggests, a value that judges, a tree that looks ahead.</p>
+      <p>Much of my work since has been on <strong>multi-agent</strong> systems — from Capture-the-Flag agents to simulated humanoid football — where intelligence is embodied, cooperative, and learned through self-play. After leading machine learning for cellular rejuvenation at <a href="https://altoslabs.com/">Altos Labs</a> and a spell on Google DeepMind's Post-AGI team, those threads now converge in a <strong>new venture</strong>: bringing AlphaGo-style reasoning to <strong>robotics</strong>, so that machines can plan and act under real-world uncertainty. Alongside this I hold the Chair of Machine Learning at <a href="https://www.ucl.ac.uk/computer-science/">UCL</a>.</p>
+    </div>
+    <aside class="path reveal" aria-label="Career path">
+      <h3 class="path__title">The path so far</h3>
+      <ol class="path__list">
+        <li><span class="path__stone"></span><span class="path__when">1996–2001</span><span class="path__what">Physics → PhD in machine learning · Berlin</span></li>
+        <li><span class="path__stone"></span><span class="path__when">2001–2003</span><span class="path__what">Postdoc · ETH Zurich &amp; Royal Holloway</span></li>
+        <li><span class="path__stone"></span><span class="path__when">2003–2015</span><span class="path__what">Microsoft Research · TrueSkill &amp; AdPredictor</span></li>
+        <li><span class="path__stone"></span><span class="path__when">2015–2021</span><span class="path__what">DeepMind · AlphaGo, AlphaZero, multi-agent RL</span></li>
+        <li><span class="path__stone"></span><span class="path__when">2021–2025</span><span class="path__what">Altos Labs · AI for cellular rejuvenation</span></li>
+        <li><span class="path__stone"></span><span class="path__when">2025–2026</span><span class="path__what">Google DeepMind · Post-AGI team</span></li>
+        <li><span class="path__stone path__stone--live"></span><span class="path__when">Now</span><span class="path__what">New venture · AlphaGo-style reasoning for robots</span></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<!-- ░░░ 01 · PROBABILISTIC REASONING ░░░ -->
+<section class="section" id="reasoning">
+  <div class="section__head reveal">
+    <span class="section__num">01</span>
+    <h2 class="section__title">Probabilistic reasoning</h2>
+  </div>
+  <p class="section__lede reveal">Long before deep networks, I worked on machines that reason with <strong>uncertainty</strong> — Bayesian models that hold beliefs, update them from evidence, and scale to the web through approximate message passing on factor graphs. Ranking players, predicting clicks, recommending, and — a decade before AlphaGo — predicting the next move in Go.</p>
+
+  <div class="pubs" id="pubs-reasoning"><!-- cards injected by JS --></div>
+
+  <div class="videos videos--single">
+    <article class="vfeature reveal">
+      <div class="vfeature__frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/bb4igmbv_Oc" title="The Path of Go — Xbox Live Arcade (Microsoft Research)"
+                loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="vfeature__body">
+        <span class="feature__kicker">Microsoft Research · Xbox Live Arcade · 2010</span>
+        <h3>The Path of Go</h3>
+        <p>The Bayesian move-prediction research didn't just stay in the lab — it shipped as a game. <strong>The Path of Go</strong>, an Xbox Live Arcade title from Microsoft Research, let players take on an AI opponent whose moves were guided by the same pattern-ranking models. Built with my wonderful collaborators — <strong>David Stern</strong>, <strong>Joaquín Quiñonero Candela</strong> and <strong>Ralf Herbrich</strong>, all in the video above. Probabilistic reasoning, playable on a console.</p>
+        <div class="feature__links">
+          <a href="https://www.microsoft.com/en-us/research/video/the-path-of-go/">Microsoft Research ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <p class="section__foot reveal">Full list on <a href="https://scholar.google.co.uk/citations?user=PNH24toAAAAJ&hl=en">Google&nbsp;Scholar</a>.</p>
+</section>
+
+<!-- ░░░ 02 · ALPHAGO ░░░ -->
+<section class="section section--tint" id="alphago">
+  <div class="section__head reveal">
+    <span class="section__num">02</span>
+    <h2 class="section__title">AlphaGo</h2>
+  </div>
+  <p class="section__lede reveal">Some of the most thrilling work of my life. I was fortunate to be on the team that built <strong>AlphaGo</strong> — the first program to beat a professional Go player, a decade before anyone expected — and its successors <strong>AlphaGo&nbsp;Zero</strong>, <strong>AlphaZero</strong> and <strong>MuZero</strong>: learning tabula rasa, generalising to chess and shogi, and finally mastering games without even being told the rules. I still relive those days in London and Seoul.</p>
+
+  <aside class="move37 reveal">
+    <span class="move37__badge">Move 37</span>
+    <p>The board at the top of this page is no decoration — it is the exact position after AlphaGo's <strong>37th move</strong> against Lee Sedol in Game&nbsp;2. A shoulder hit on the fifth line that commentators first called a mistake, then a masterpiece: a move no human would have played, and the moment the world saw a machine be genuinely <em>creative</em>. <a href="#top">Replay it at the top ↑</a></p>
+  </aside>
+
+  <div class="pubs" id="pubs-alphago"><!-- cards injected by JS --></div>
+
+  <div class="material reveal">
+    <span class="material__label">More on AlphaGo</span>
+    <div class="material__links">
+      <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y">AlphaGo — the film ↗</a>
+      <a href="https://deepmind.google/research/breakthroughs/alphago/">The story so far ↗</a>
+      <a href="https://deepmind-media.storage.googleapis.com/alphago/pdf-files/english/ls-vs-ag2/LS%20vs%20AG%20-%20G2%20-%20English.pdf">Fan Hui on Game&nbsp;2 (incl. Move&nbsp;37) ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ 03 · AGENTS & ROBOTICS ░░░ -->
+<section class="section" id="agents">
+  <div class="section__head reveal">
+    <span class="section__num">03</span>
+    <h2 class="section__title">Agents &amp; robotics</h2>
+  </div>
+  <p class="section__lede reveal">Much of the world's complexity is agents interacting — cells in a body, players in a team, robots in a warehouse. In games we can build embodied, cooperative agents and watch intelligence emerge from self-play. These are the testbeds on the road from AlphaGo to robots that reason and act in the physical world.</p>
+
+  <div class="videos">
+    <article class="vfeature reveal">
+      <div class="vfeature__frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/dltN4MxV1RI" title="Capture the Flag: the emergence of complex cooperative agents"
+                loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="vfeature__body">
+        <span class="feature__kicker">DeepMind · Science 2019 · with Max Jaderberg</span>
+        <h3>Capture the Flag</h3>
+        <p>A population of reinforcement-learning agents, trained from only pixels and game points, reached <strong>human level</strong> at Quake&nbsp;III Arena Capture-the-Flag. Through population-based training across thousands of parallel matches on randomly generated maps, the agents learned teamwork, roles, and even their own internal rewards.</p>
+        <div class="feature__links">
+          <a href="https://deepmind.google/blog/capture-the-flag-the-emergence-of-complex-cooperative-agents/">Project ↗</a>
+          <a href="https://arxiv.org/abs/1807.01281">Paper ↗</a>
+          <a href="https://www.science.org/doi/10.1126/science.aau6249">Science ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="vfeature vfeature--reverse reveal">
+      <div class="vfeature__frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/KHMwq9pv7mg" title="From Motor Control to Team Play in Simulated Humanoid Football"
+                loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="vfeature__body">
+        <span class="feature__kicker">DeepMind · Science Robotics 2022 · with Nicolas Heess</span>
+        <h3>Simulated humanoid football</h3>
+        <p>Teams of simulated humanoids learn football <strong>end to end</strong> — from low-level motor control (running, turning, kicking) up to coordinated team play. Division of labour and off-ball movement emerge from self-play: a study of how embodied skill and cooperation can be learned together, a step toward robots that move and decide.</p>
+        <div class="feature__links">
+          <a href="https://deepmind.google/discover/blog/from-motor-control-to-embodied-intelligence/">Project ↗</a>
+          <a href="https://arxiv.org/abs/2105.12196">Paper ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <aside class="venture reveal">
+    <span class="feature__kicker">What's next</span>
+    <h3>AlphaGo-style reasoning, in the physical world</h3>
+    <p>These threads converge in a new venture I'm building: pointing the search-and-learning that mastered Go at <strong>robots</strong> that must plan and act under real-world uncertainty. The reasoning that produced a move the world had never seen — aimed, this time, at the physical world.</p>
+  </aside>
+</section>
+
+<!-- ░░░ 04 · OTHER WORK ░░░ -->
+<section class="section section--tint" id="other">
+  <div class="section__head reveal">
+    <span class="section__num">04</span>
+    <h2 class="section__title">Other work</h2>
+  </div>
+  <p class="section__lede reveal">A career rarely runs in a straight line. A few other threads I care about — the road from AGI to superintelligence, cooperation between AIs, reversing ageing in cells, and what our digital traces quietly reveal about us.</p>
+
+  <div class="pubs" id="pubs-other"><!-- cards injected by JS --></div>
+</section>
+
+<!-- ░░░ 05 · EXPERIMENTS ░░░ -->
+<section class="section" id="experiments">
+  <div class="section__head reveal">
+    <span class="section__num">05</span>
+    <h2 class="section__title">Experiments</h2>
+  </div>
+  <p class="section__lede reveal">A few things I built for the joy of it — small interactive demos exploring ideas in learning, perception, and physics. Best viewed on a desktop browser.</p>
+
+  <div class="experiments">
+    <a class="exp reveal" href="https://thoregraepel.github.io/seeMusic/" target="_blank" rel="noopener">
+      <div class="exp__art">
+        <img class="exp__img" src="images/paper_illustrations/seemusic.jpg" alt="seeMusic — music visualised as moiré gratings" loading="lazy" />
+      </div>
+      <div class="exp__body">
+        <h3>seeMusic</h3>
+        <p>Play a MIDI file and watch the music become light: each note drives a vertical grating whose spatial frequency tracks its pitch, and overlapping notes bloom into moiré patterns.</p>
+        <span class="exp__cta">open demo ↗</span>
+      </div>
+    </a>
+
+    <a class="exp reveal" href="https://thoregraepel.github.io/MatchProb/" target="_blank" rel="noopener">
+      <div class="exp__art">
+        <img class="exp__img" src="images/paper_illustrations/matchprob.png" alt="MatchProb — tennis match probability" loading="lazy" />
+      </div>
+      <div class="exp__body">
+        <h3>MatchProb</h3>
+        <p>A tennis match-probability calculator. Give it a player's chance of winning a point on serve and it computes — via absorbing Markov chains — the exact probability of winning from any score.</p>
+        <span class="exp__cta">open demo ↗</span>
+      </div>
+    </a>
+
+    <a class="exp reveal" href="https://thoregraepel.github.io/computronium/" target="_blank" rel="noopener">
+      <div class="exp__art">
+        <img class="exp__img" src="images/paper_illustrations/computronium.jpg" alt="Computronium — coupled oscillators on a diamond lattice" loading="lazy" />
+      </div>
+      <div class="exp__body">
+        <h3>Computronium</h3>
+        <p>A WebGPU sandbox where coupled oscillators on a diamond lattice self-organise — phases synchronising while bond couplings drift toward criticality. Order emerging from local rules.</p>
+        <span class="exp__cta">open demo ↗</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ░░░ 06 · TALKS ░░░ -->
+<section class="section section--tint" id="talks">
+  <div class="section__head reveal">
+    <span class="section__num">06</span>
+    <h2 class="section__title">Talks &amp; teaching</h2>
+  </div>
+
+  <div class="talks">
+    <ul class="talklist reveal">
+      <li class="talk talk--feature">
+        <span class="talk__tag">TEDx</span>
+        <div><a class="talk__title" href="https://www.ted.com/talks/thore_graepel_the_human_pursuit_of_artificial_intelligence">The human pursuit of artificial intelligence</a>
+        <span class="talk__meta">TEDx Exeter · 2019</span></div>
+      </li>
+      <li class="talk">
+        <span class="talk__tag">Keynote</span>
+        <div><a class="talk__title" href="https://www.youtube.com/watch?v=GB5XWY_IvvE">Automatic Curricula in Deep Multi-Agent RL</a>
+        <span class="talk__meta">AAMAS 2020 Keynote</span></div>
+      </li>
+      <li class="talk">
+        <span class="talk__tag">Tutorial</span>
+        <div><a class="talk__title" href="https://thoregraepel.github.io/files/MA-DM-ICML-ACAI.pdf">Multi-Agent Learning Tutorial</a>
+        <span class="talk__meta">AAMAS / ICML 2018 · Stockholm · slides</span></div>
+      </li>
+      <li class="talk">
+        <span class="talk__tag">Talk</span>
+        <div><a class="talk__title" href="https://www.youtube.com/watch?v=yE62Zwhmzi8">Multi-Agent Learning in AI Research at DeepMind</a>
+        <span class="talk__meta">Alan Turing Institute · 2017</span></div>
+      </li>
+      <li class="talk">
+        <span class="talk__tag">Talk</span>
+        <div><a class="talk__title" href="https://www.youtube.com/watch?v=HK6T83Iw8o4">On the Predictability of Human Online Behaviour</a>
+        <span class="talk__meta">Computational Social Science, Warwick · 2015</span></div>
+      </li>
+    </ul>
+
+    <aside class="teaching reveal">
+      <div class="teaching__card">
+        <span class="feature__kicker">DeepMind × UCL</span>
+        <h3>The Deep Learning Lecture Series</h3>
+        <p>Together with a great team at UCL and DeepMind, I organised a twelve-lecture series on deep learning, delivered by some of my outstanding DeepMind colleagues.</p>
+        <a href="https://www.youtube.com/watch?v=7R52wiUgxZI&list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF">Watch the series ↗</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ░░░ 07 · WRITING ░░░ -->
+<section class="section" id="writing">
+  <div class="section__head reveal">
+    <span class="section__num">07</span>
+    <h2 class="section__title">Writing</h2>
+  </div>
+  <a class="writing reveal" href="https://thoregraepel.substack.com" target="_blank" rel="noopener">
+    <span class="writing__logo"><img src="images/patterns-of-thought.png" alt="Patterns of Thought — logo" width="420" height="300" loading="lazy" /></span>
+    <span class="writing__body">
+      <span class="feature__kicker">Substack · explaining the world from first principles</span>
+      <h3>Patterns of Thought</h3>
+      <p>Essays on the mental models that cut across disciplines — simple, general, useful patterns like filters, leverage, and order — explored through examples, games, puzzles, and paradoxes. Grasp them once and you start to see them everywhere.</p>
+      <span class="exp__cta">Read on Substack ↗</span>
+    </span>
+  </a>
+</section>
+
+<!-- ░░░ 08 · INSTITUTIONS ░░░ -->
+<section class="section section--tint" id="institutions">
+  <div class="section__head reveal">
+    <span class="section__num">08</span>
+    <h2 class="section__title">Institutions</h2>
+  </div>
+  <p class="section__lede reveal">Places that have shaped me — from a Hamburg schoolroom and a tall ship, through universities and research labs, to the boards I serve on today.</p>
+  <ul class="orgs reveal" aria-label="Institutions I am connected to">
+    <li><a href="https://www.johanneum-hamburg.de/"><img class="org__ico" src="images/logos/johanneum.png" alt="" width="20" height="20" loading="lazy" />Gelehrtenschule des Johanneums, Hamburg</a></li>
+    <li><a href="https://www.bundeswehr.de/de/ausruestung-technik-bundeswehr/seesysteme-bundeswehr/segelschulschiff-gorch-fock"><img class="org__ico" src="images/logos/gorch-fock.svg" alt="" width="20" height="20" loading="lazy" />Gorch&nbsp;Fock · German Navy</a></li>
+    <li><a href="https://georgiasouthern.edu"><img class="org__ico" src="images/logos/georgia-southern.png" alt="" width="20" height="20" loading="lazy" />Georgia Southern University</a></li>
+    <li><a href="https://www.uni-hamburg.de/en.html"><img class="org__ico" src="images/logos/uni-hamburg.svg" alt="" width="20" height="20" loading="lazy" />University of Hamburg</a></li>
+    <li><a href="https://www.imperial.ac.uk"><img class="org__ico" src="images/logos/imperial.svg" alt="" width="20" height="20" loading="lazy" />Imperial College London</a></li>
+    <li><a href="https://www.tu.berlin/en/"><img class="org__ico" src="images/logos/tu-berlin.png" alt="" width="20" height="20" loading="lazy" />Technical University of Berlin</a></li>
+    <li><a href="https://www.riken.jp/en/"><img class="org__ico" src="images/logos/riken.png" alt="" width="20" height="20" loading="lazy" />RIKEN, Tokyo</a></li>
+    <li><a href="https://ethz.ch/en.html"><img class="org__ico org__ico--dark" src="images/logos/eth.png" alt="" width="20" height="20" loading="lazy" />ETH Zurich</a></li>
+    <li><a href="https://www.royalholloway.ac.uk"><img class="org__ico" src="images/logos/royal-holloway.svg" alt="" width="20" height="20" loading="lazy" />Royal Holloway, University of London</a></li>
+    <li><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/"><img class="org__ico" src="images/logos/microsoft.svg" alt="" width="20" height="20" loading="lazy" />Microsoft Research Cambridge</a></li>
+    <li><a href="https://altoslabs.com"><img class="org__ico org__ico--dark" src="images/logos/altos.png" alt="" width="20" height="20" loading="lazy" />Altos Labs</a></li>
+    <li><a href="https://www.ucl.ac.uk"><img class="org__ico org__ico--dark" src="images/logos/ucl.png" alt="" width="20" height="20" loading="lazy" />UCL</a></li>
+    <li><a href="https://deepmind.google"><img class="org__ico org__ico--dark" src="images/logos/deepmind.png" alt="" width="20" height="20" loading="lazy" />Google DeepMind</a></li>
+    <li><a href="https://partnershiponai.org"><img class="org__ico" src="images/logos/partnership-ai.png" alt="" width="20" height="20" loading="lazy" />Partnership on AI</a></li>
+    <li><a href="https://www.cooperativeai.com"><img class="org__ico" src="images/logos/cooperative-ai.png" alt="" width="20" height="20" loading="lazy" />Cooperative AI Foundation</a></li>
+    <li><a href="https://lims.ac.uk"><img class="org__ico org__ico--dark" src="images/logos/lims.png" alt="" width="20" height="20" loading="lazy" />London Institute for Mathematical Sciences</a></li>
+  </ul>
+</section>
+
+<!-- ░░░ CONTACT ░░░ -->
+<section class="section section--contact" id="contact">
+  <div class="contact reveal">
+    <h2 class="contact__title">Let's talk about reasoning machines.</h2>
+    <p class="contact__sub">Reach me on any of these, or read the papers above.</p>
+    <div class="contact__links">
+      <a href="https://scholar.google.co.uk/citations?user=PNH24toAAAAJ&hl=en">Google Scholar</a>
+      <a href="https://orcid.org/0000-0003-3957-0310">ORCID</a>
+      <a href="https://www.linkedin.com/in/thoregraepel">LinkedIn</a>
+      <a href="https://twitter.com/ThoreG">X · @ThoreG</a>
+      <a href="https://github.com/thoregraepel">GitHub</a>
+      <a href="https://www.researchgate.net/profile/Thore_Graepel">ResearchGate</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span class="stone stone--white" aria-hidden="true"></span>
+  <p>© <span id="year"></span> Thore Graepel · Reasoning · AlphaGo · Robotics.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
