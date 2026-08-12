@@ -441,6 +441,14 @@
 
   var OTHER = [
     {
+      title: "How AI is reshaping discovery in maths and physics",
+      venue: "Nature", year: 2026,
+      cite: "Burtsev, He, Sobko, Bhattacharya, Graepel · Nature 654 (8118), 324–326",
+      cover: "img:images/paper_illustrations/ai-for-discovery.jpeg",
+      url: "https://www.nature.com/articles/d41586-026-01820-1",
+      abstract: "A commentary on how AI is changing the practice of mathematics and theoretical physics — not by replacing human intuition, but by reimagining how questions are asked, explored and understood. We survey machine-learning tools that surface conjectures, expose hidden structure and search vast spaces of ideas, and argue for a partnership in which AI widens the range of problems theorists can reason about."
+    },
+    {
       title: "From AGI to ASI: the future of artificial intelligence",
       venue: "arXiv", year: 2026,
       cite: "Genewein, Franklin, Lerchner, … Graepel, Hutter, Legg · arXiv:2606.12683 · Google DeepMind",
