@@ -238,7 +238,7 @@
     <span class="section__num">05</span>
     <h2 class="section__title">Experiments</h2>
   </div>
-  <p class="section__lede reveal">A few things I built for the joy of it — small interactive demos exploring ideas in learning, perception, and physics. Best viewed on a desktop browser.</p>
+  <p class="section__lede reveal">A few things I built for the joy of it — small interactive demos exploring ideas in reasoning, learning, perception, and physics. Best viewed on a desktop browser.</p>
 
   <div class="experiments">
     <a class="exp reveal" href="https://thoregraepel.github.io/seeMusic/" target="_blank" rel="noopener">
@@ -270,6 +270,28 @@
       <div class="exp__body">
         <h3>Computronium</h3>
         <p>A WebGPU sandbox where coupled oscillators on a diamond lattice self-organise — phases synchronising while bond couplings drift toward criticality. Order emerging from local rules.</p>
+        <span class="exp__cta">open demo ↗</span>
+      </div>
+    </a>
+
+    <a class="exp reveal" href="https://thoregraepel.github.io/twenty-questions/" target="_blank" rel="noopener">
+      <div class="exp__art">
+        <img class="exp__img" src="images/paper_illustrations/twenty-questions.jpg" alt="Twenty Questions — a ring of 104 candidate objects and their features, with the remaining uncertainty in bits at the centre" loading="lazy" />
+      </div>
+      <div class="exp__body">
+        <h3>Twenty Questions</h3>
+        <p>Think of an object and it finds it, picking each question to destroy the most uncertainty — a posterior over 104 candidates, with the entropy in bits falling as it closes in. No language model at runtime, just a feature table and Bayes.</p>
+        <span class="exp__cta">open demo ↗</span>
+      </div>
+    </a>
+
+    <a class="exp reveal" href="https://thoregraepel.github.io/sudoku/" target="_blank" rel="noopener">
+      <div class="exp__art">
+        <img class="exp__img" src="images/paper_illustrations/sudoku.png" alt="Entropy Sudoku — a grid in which undecided cells show the probability of each digit as small bars" loading="lazy" />
+      </div>
+      <div class="exp__body">
+        <h3>Entropy Sudoku</h3>
+        <p>Sudoku treated as reasoning rather than search. Belief propagation over a factor graph of all-different constraints keeps a distribution over every cell, and each hypothesis is chosen to cut the expected posterior entropy the most — with the reasoning tree left on screen.</p>
         <span class="exp__cta">open demo ↗</span>
       </div>
     </a>
