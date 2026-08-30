@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entropy Sudoku — a probabilistic reasoning system</title>
+<link rel="stylesheet" href="src/ui/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <h1>Entropy Sudoku</h1>
+    <p class="sub" id="puzzleName">no puzzle loaded</p>
+  </div>
+  <div class="metrics" id="metrics">
+    <div class="metric wide" title="Sound upper bound on the joint entropy of the belief state: the log of the number of candidate combinations still standing. It reaches exactly 0 when the puzzle is solved.">
+      <span class="mlabel">entropy <em>H ≤ Σlog₂|Cᵢ|</em></span>
+      <span class="mvalue" id="mJoint">–</span>
+      <span class="munit">bits</span>
+      <div class="mbar"><div id="mJointBar"></div></div>
+    </div>
+    <div class="metric" title="Bethe estimate 2^log₂Z of the number of remaining solutions. Only shown when belief propagation reaches a fixed point — off a fixed point the free energy is not meaningful.">
+      <span class="mlabel">solutions <em>2^H<sub>Bethe</sub></em></span>
+      <span class="mvalue" id="mSolutions">–</span>
+    </div>
+    <div class="metric" title="Sum of the entropies of the 81 individual marginals.">
+      <span class="mlabel">marginal <em>ΣH(Xᵢ)</em></span>
+      <span class="mvalue" id="mMarginal">–</span><span class="munit">bits</span>
+    </div>
+    <div class="metric">
+      <span class="mlabel">cells decided</span>
+      <span class="mvalue" id="mSolved">–</span>
+    </div>
+    <div class="metric">
+      <span class="mlabel">tree / depth</span>
+      <span class="mvalue" id="mNodes">–</span>
+    </div>
+    <div class="metric">
+      <span class="mlabel">refutations</span>
+      <span class="mvalue" id="mRefs">–</span>
+    </div>
+  </div>
+</header>
+
+<main class="app">
+
+  <section class="pane left">
+    <div class="controls">
+      <button id="btnStep" class="primary" title="One reasoning micro-step (Space)">Step</button>
+      <button id="btnRun" title="Run continuously (Enter)">▶ Run</button>
+      <button id="btnSolve" title="Run to completion without animation">Solve</button>
+      <button id="btnReset" title="Back to the initial belief state">Reset</button>
+      <label class="speed">speed
+        <input type="range" id="speed" min="0" max="6" value="3">
+      </label>
+    </div>
+
+    <div class="phasebar" id="phasebar"></div>
+
+    <div class="boardwrap">
+      <div id="board" class="board"></div>
+      <div class="boardlegend">
+        <span><i class="sw given"></i>given</span>
+        <span><i class="sw derived"></i>derived</span>
+        <span><i class="sw hypo"></i>hypothesis</span>
+        <span><i class="sw elim"></i>just eliminated</span>
+        <span class="grow"></span>
+        <label class="chk"><input type="checkbox" id="showBars" checked> probability bars</label>
+      </div>
+    </div>
+
+    <div class="cellinfo" id="cellinfo">
+      <div class="ci-head">Click a cell to inspect its belief distribution.</div>
+    </div>
+
+    <div class="logwrap">
+      <h3>Reasoning log</h3>
+      <ol id="log" class="log"></ol>
+    </div>
+  </section>
+
+  <section class="pane right">
+    <nav class="tabs" id="tabs">
+      <button data-tab="tree" class="active">Reasoning tree</button>
+      <button data-tab="moves">Move analysis</button>
+      <button data-tab="library">Puzzles</button>
+      <button data-tab="editor">Editor</button>
+      <button data-tab="bench">Benchmark</button>
+      <button data-tab="about">How it works</button>
+    </nav>
+
+    <div class="tabpanes">
+
+      <div class="tabpane active" data-tab="tree">
+        <div class="tp-bar">
+          <span class="hint">Each node is a hypothesis. Click to load that belief state onto the board.</span>
+          <span class="grow"></span>
+          <button id="treeFit" class="mini">fit</button>
+          <label class="chk"><input type="checkbox" id="treeFollow" checked> follow</label>
+        </div>
+        <div class="treewrap"><svg id="tree"></svg></div>
+        <div id="treeInfo" class="nodeinfo"></div>
+      </div>
+
+      <div class="tabpane" data-tab="moves">
+        <div class="tp-bar">
+          <span class="hint">Candidate reasoning moves at the selected node, ranked by expected entropy reduction.</span>
+        </div>
+        <div id="moves" class="moves"></div>
+      </div>
+
+      <div class="tabpane" data-tab="library">
+        <div class="tp-bar"><span class="hint">Graded test suite. Every puzzle is verified to have exactly one solution.</span></div>
+        <div id="library" class="library"></div>
+        <h3>Load from elsewhere</h3>
+        <div class="importbox">
+          <textarea id="importText" rows="4" placeholder="Paste 81 characters (digits and . for blanks), or a 9-line grid…"></textarea>
+          <div class="row">
+            <button id="btnImport">Load pasted</button>
+            <label class="filebtn">Open file…<input type="file" id="importFile" accept=".txt,.sdk,.sdm,.ss,text/plain"></label>
+            <button id="btnRandom">Generate random</button>
+            <select id="randomGrade">
+              <option value="easy">easy</option>
+              <option value="medium">medium</option>
+              <option value="hard" selected>hard</option>
+              <option value="expert">expert</option>
+            </select>
+          </div>
+          <div class="row">
+            <input type="url" id="importUrl" placeholder="https://… (plain text or JSON board)">
+            <button id="btnFetch">Fetch URL</button>
+          </div>
+          <p class="note">Remote fetches need the other site to allow cross-origin requests. A puzzle can also be
+            linked directly: append <code>?puzzle=…81 chars…</code> to this page's URL.</p>
+          <p class="err" id="importErr"></p>
+        </div>
+      </div>
+
+      <div class="tabpane" data-tab="editor">
+        <div class="tp-bar"><span class="hint">Click a cell and type 1–9; Backspace clears. Arrow keys move.</span></div>
+        <div id="editorBoard" class="board editor"></div>
+        <div class="row">
+          <button id="edClear">Clear all</button>
+          <button id="edCheck">Check</button>
+          <button id="edUse" class="primary">Use this puzzle</button>
+          <button id="edFromCurrent">Copy current puzzle</button>
+        </div>
+        <p class="note" id="edStatus"></p>
+        <div class="row"><input id="edString" readonly class="mono"></div>
+      </div>
+
+      <div class="tabpane" data-tab="bench">
+        <div class="tp-bar"><span class="hint">Run reasoning strategies over the graded suite to compare them.</span></div>
+        <div class="benchopts">
+          <fieldset><legend>strategies</legend><div id="benchStrats"></div></fieldset>
+          <fieldset><legend>grades</legend><div id="benchGrades"></div></fieldset>
+        </div>
+        <div class="row">
+          <button id="btnBench" class="primary">Run benchmark</button>
+          <span id="benchStatus" class="note"></span>
+        </div>
+        <div id="benchOut" class="benchout"></div>
+      </div>
+
+      <div class="tabpane" data-tab="about">
+        <div class="about" id="about"></div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div class="settings" id="settings"></div>
+
+<script type="module" src="src/ui/app.js"></script>
+</body>
+</html>
