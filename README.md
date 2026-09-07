@@ -3,9 +3,10 @@
 A modern, self-contained static site. **No build step, no dependencies** — just
 HTML, CSS, and vanilla JS. Aesthetic: *playful-intellectual*, built around a
 Go / games motif. The site is focused on three threads — **Probabilistic
-Reasoning**, **AlphaGo**, and **Agents & Robotics** — with the narrative arc
-running reasoning → AlphaGo → a new venture applying AlphaGo-style reasoning to
-robots. The hero features a 19×19 Go board frozen on AlphaGo's famous **Move 37**
+Reasoning**, **AlphaGo**, and **Agents & Embodied Intelligence** — with the narrative arc
+running reasoning → AlphaGo → a new project applying AlphaGo-style reasoning to
+frontier AI, with embodied intelligence positioned as the natural next step that
+the multi-agent track record warrants. The hero features a 19×19 Go board frozen on AlphaGo's famous **Move 37**
 (vs. Lee Sedol, Game 2, 2016); click it or the *replay* button to replay the
 opening up to that move.
 
@@ -21,7 +22,7 @@ python3 -m http.server 4100
 
 ## Structure
 
-Sections: hero · About · 01 Reasoning · 02 AlphaGo · 03 Agents & Robotics ·
+Sections: hero · About · 01 Reasoning · 02 AlphaGo · 03 Agents & Embodied Intelligence ·
 04 Experiments · 05 Other Work · 06 Talks · 07 Writing · Contact.
 
 ```
