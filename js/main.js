@@ -357,7 +357,7 @@
       cite: "Herbrich, Minka, Graepel · Advances in Neural Information Processing Systems 19",
       cover: "img:images/TrueSkill-Factor-Graph.png",
       url: "https://papers.nips.cc/paper/3079-trueskilltm-a-bayesian-skill-rating-system",
-      abstract: "A Bayesian generalisation of chess's Elo: it tracks uncertainty over player skills, models draws, handles any number of competitors, and infers individual skill from team results via approximate message passing on a factor graph. It runs at scale as Xbox Live's TrueSkill, and is now textbook material."
+      abstract: "A Bayesian heir to chess's Elo: it tracks uncertainty over player skills, models draws, handles any number of players, and infers each player's skill from team results through approximate message passing on a factor graph. It runs at scale as Xbox Live's TrueSkill, and now fills textbooks."
     },
     {
       title: "TrueSkill Through Time: Revisiting the History of Chess",
@@ -365,7 +365,7 @@
       cite: "Dangauthier, Herbrich, Minka, Graepel · Advances in Neural Information Processing Systems 20",
       cover: "img:images/TrueSkill-History-Of-Chess.png",
       url: "https://papers.nips.cc/paper/3331-trueskill-through-time-revisiting-the-history-of-chess",
-      abstract: "By smoothing skill estimates through time — rather than only filtering forward — this model reconstructs the full skill trajectory of every player. Applied to 150 years of chess records, it lets us compare champions across eras and finds that overall playing strength has risen over the last century."
+      abstract: "By smoothing skill estimates through time — rather than only filtering forward — this model rebuilds the whole skill path of every player. Set loose on 150 years of chess records, it lets us weigh champions across eras and finds that overall playing strength has risen over the last century."
     },
     {
       title: "Web-Scale Bayesian Click-Through Rate Prediction (AdPredictor)",
@@ -373,7 +373,7 @@
       cite: "Graepel, Quiñonero-Candela, Borchert, Herbrich · ICML 2010 · Microsoft Bing",
       cover: "img:images/paper_illustrations/adpredictor.png",
       url: "https://quinonero.net/Publications/AdPredictorICML2010-final.pdf",
-      abstract: "AdPredictor — a probit regression model with Gaussian beliefs over weights, updated online by approximate message passing — powers click-through prediction for sponsored search in Microsoft's Bing. Principled weight pruning and an approximate parallel implementation make Bayesian inference scale to the web."
+      abstract: "AdPredictor — a probit regression model with Gaussian beliefs over weights, updated online by approximate message passing — powers click-through prediction for sponsored search in Microsoft's Bing. Careful weight pruning and a rough parallel build make Bayesian inference scale to the web."
     },
     {
       title: "Matchbox: Large Scale Online Bayesian Recommendations",
@@ -381,7 +381,7 @@
       cite: "Stern, Herbrich, Graepel · Proceedings of the 18th International World Wide Web Conference",
       cover: "img:images/paper_illustrations/matchbox.png",
       url: "https://www.herbrich.me/papers/www09.pdf",
-      abstract: "A probabilistic recommender that fuses content (user and item metadata) with collaborative filtering by mapping features into a shared low-dimensional trait space. It learns online via assumed-density filtering, expressing calibrated uncertainty over every recommendation."
+      abstract: "A probabilistic recommender that fuses content (user and item metadata) with collaborative filtering by mapping features into a shared low-dimensional trait space. It learns online through assumed-density filtering, and carries honest uncertainty over every recommendation."
     },
     {
       title: "Bayesian Pattern Ranking for Move Prediction in the Game of Go",
@@ -389,7 +389,7 @@
       cite: "Stern, Herbrich, Graepel · ICML 2006",
       cover: "img:images/paper_illustrations/go-pattern-ranking.png",
       url: "https://www.herbrich.me/papers/p873-stern.pdf",
-      abstract: "A Bayesian ranking model over local board patterns that learns a distribution over an expert's next move from game records — predicting the played move in roughly a third of positions. A conceptual ancestor of the policy network that would later guide AlphaGo's search: probabilistic reasoning meeting the game of Go, a decade early."
+      abstract: "A Bayesian ranking model over local board patterns that learns a distribution over an expert's next move from game records — predicting the played move in roughly a third of positions. An early forebear of the policy network that would later guide AlphaGo's search: probabilistic reasoning meeting the game of Go, a decade early."
     },
     {
       title: "SiGMa: Simple Greedy Matching for Aligning Large Knowledge Bases",
@@ -397,7 +397,7 @@
       cite: "Lacoste-Julien, Palla, Davies, Kasneci, Graepel, Ghahramani · KDD 2013",
       cover: "img:images/paper_illustrations/sigma-aligning-knowledge.png",
       url: "https://arxiv.org/abs/1207.4525",
-      abstract: "How do two machines agree on what they know? SiGMa aligns large knowledge bases — millions of entities and facts — by iteratively propagating matches through the relational graph and combining structure with property similarity. Reasoning over knowledge representations at scale, joint work with Zoubin Ghahramani."
+      abstract: "How do two machines agree on what they know? SiGMa aligns large knowledge bases — millions of entities and facts — by spreading matches through the relational graph, round after round, and weaving structure together with property likeness. Reasoning over knowledge at scale, joint work with Zoubin Ghahramani."
     }
   ];
 
@@ -408,7 +408,7 @@
       cite: "Silver, Huang, Maddison, … Graepel, Hassabis · Nature 529, 484–489",
       cover: "img:images/AlphaGo-Search-Tree.jpg",
       url: "https://www.nature.com/articles/nature16961",
-      abstract: "AlphaGo combines value networks that evaluate board positions and policy networks that select moves — trained by supervised learning from human games and reinforcement learning from self-play — with Monte-Carlo tree search. It achieved a 99.8% win rate against other programs and defeated the European champion 5–0: the first program to beat a professional at full-sized Go."
+      abstract: "AlphaGo pairs value networks that weigh board positions with policy networks that pick moves — taught by supervised learning from human games and by reinforcement learning from self-play — and marries them to Monte-Carlo tree search. It won 99.8% of its games against other programs and beat the European champion 5–0: the first program to beat a professional at full-sized Go."
     },
     {
       title: "Mastering the game of Go without human knowledge",
@@ -417,7 +417,7 @@
       cover: "img:images/paper_illustrations/alphago-zero.png",
       url: "https://www.nature.com/articles/nature24270",
       preprint: "https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf",
-      abstract: "AlphaGo Zero learns tabula rasa — solely by reinforcement learning from self-play, with no human data or guidance beyond the rules. Becoming its own teacher, it reached superhuman play, winning 100–0 against the previously published, champion-defeating AlphaGo."
+      abstract: "AlphaGo Zero learns from a blank slate — by reinforcement learning from self-play alone, with no human data or guidance beyond the rules. Becoming its own teacher, it reached superhuman play, winning 100–0 against the earlier, champion-beating AlphaGo."
     },
     {
       title: "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
@@ -426,7 +426,7 @@
       cover: "img:images/paper_illustrations/alphazero.png",
       url: "https://www.science.org/doi/10.1126/science.aar6404",
       preprint: "https://discovery.ucl.ac.uk/id/eprint/10069050/1/alphazero_preprint.pdf",
-      abstract: "AlphaZero generalises the AlphaGo Zero approach into a single algorithm that achieves superhuman performance across many games. Starting from random play and given no domain knowledge except the rules, it convincingly defeated world-champion programs in chess and shogi as well as Go — one method, three games, no human data."
+      abstract: "AlphaZero widens the AlphaGo Zero approach into one algorithm that reaches superhuman play across many games. Starting from random play, and told nothing beyond the rules, it soundly beat world-champion programs at chess and shogi as well as Go — one method, three games, no human data."
     },
     {
       title: "Mastering Atari, Go, chess and shogi by planning with a learned model",
@@ -435,7 +435,7 @@
       cover: "img:images/paper_illustrations/mu-zero.png",
       url: "https://www.nature.com/articles/s41586-020-03051-3",
       preprint: "https://arxiv.org/pdf/1911.08265",
-      abstract: "MuZero drops the last assumption AlphaZero still made: the rules. It learns its own model of an environment — just the parts that matter for value, policy and reward — and plans with that learned model. The same algorithm masters Go, chess and shogi and, without any simulator, the visually rich world of Atari: reasoning by planning, even when no one hands you the rules."
+      abstract: "MuZero drops the last thing AlphaZero still took for granted: the rules. It learns its own model of a world — only the parts that bear on value, policy and reward — and plans with that learned model. The same algorithm masters Go, chess and shogi and, with no simulator at all, the rich sights of Atari: reasoning by planning, even when no one hands you the rules."
     }
   ];
 
@@ -446,7 +446,7 @@
       cite: "Burtsev, He, Sobko, Bhattacharya, Graepel · Nature 654 (8118), 324–326",
       cover: "img:images/paper_illustrations/ai-for-discovery.jpeg",
       url: "https://www.nature.com/articles/d41586-026-01820-1",
-      abstract: "A commentary on how AI is changing the practice of mathematics and theoretical physics — not by replacing human intuition, but by reimagining how questions are asked, explored and understood. We survey machine-learning tools that surface conjectures, expose hidden structure and search vast spaces of ideas, and argue for a partnership in which AI widens the range of problems theorists can reason about."
+      abstract: "A commentary on how AI now reshapes the practice of mathematics and theoretical physics — not by replacing human intuition, but by recasting how we ask, explore and understand questions. We survey machine-learning tools that throw up conjectures, lay bare hidden structure and search vast spaces of ideas, and we argue for a partnership in which AI widens the range of problems theorists can reason about."
     },
     {
       title: "From AGI to ASI: the future of artificial intelligence",
@@ -454,7 +454,7 @@
       cite: "Genewein, Franklin, Lerchner, … Graepel, Hutter, Legg · arXiv:2606.12683 · Google DeepMind",
       cover: "img:images/paper_illustrations/agi-to-asi.png",
       url: "https://arxiv.org/abs/2606.12683",
-      abstract: "A technical report examining the transition from artificial general intelligence to artificial superintelligence — what changes as machine intelligence surpasses the human range, the advantages of digital over biological intelligence, and what these shifts mean for how we design and govern advanced AI. From my time on the Post-AGI team at Google DeepMind."
+      abstract: "A technical report weighing the road from artificial general intelligence to artificial superintelligence — what changes as machine intelligence outstrips the human range, where digital intelligence holds an edge over biological, and what these shifts mean for how we design and govern advanced AI. From my time on the Post-AGI team at Google DeepMind."
     },
     {
       title: "Escaping ageing through Cell Annealing — a phenomenological model",
@@ -462,7 +462,7 @@
       cite: "Memczak, Izpisúa Belmonte, Graepel · Cell Research 35 (8), 535–538",
       cover: "img:images/paper_illustrations/cell-annealing.jpg",
       url: "https://www.nature.com/articles/s41422-025-01138-z",
-      abstract: "A physics-inspired model of cellular rejuvenation, from my time at Altos Labs. Borrowing from Hopfield networks and energy landscapes, we picture cell states as minima in a landscape: transiently raising cellular potency (\"annealing\") lets ageing cells escape dysfunctional local minima and settle back into youthful, healthy states — a conceptual bridge between machine learning and cellular reprogramming. Joint work with Sebastian Memczak."
+      abstract: "A physics-minded model of cellular rejuvenation, from my time at Altos Labs. Borrowing from Hopfield networks and energy landscapes, we picture cell states as minima in a landscape: raising cellular potency for a while (\"annealing\") lets ageing cells climb out of broken local minima and settle back into young, healthy states — a bridge between machine learning and cellular reprogramming. Joint work with Sebastian Memczak."
     },
     {
       title: "Cooperative AI: machines must learn to find common ground",
@@ -470,7 +470,7 @@
       cite: "Dafoe, Bachrach, Hadfield, Horvitz, Larson, Graepel · Nature 593, 33–36",
       cover: "img:images/paper_illustrations/common-ground.jpg",
       url: "https://discovery.ucl.ac.uk/id/eprint/10132183/1/Cooperative%20AI%20-%20machines%20must%20learn%20to%20find%20common%20ground%20-%20Preprint.pdf",
-      abstract: "A call to build AI that can cooperate — with humans and with other machines. We argue that the field has over-focused on raw capability and competition, and that learning to find common ground, build trust, and coordinate is essential if AI is to help solve society's hardest collective problems. This work helped catalyse the founding of the Cooperative AI Foundation, on whose board I now serve."
+      abstract: "A call to build AI that can work with others — with humans and with other machines. We argue that the field has leaned too hard on raw capability and rivalry, and that AI must learn to find common ground, build trust and coordinate before it can help solve society's hardest shared problems. This work helped spark the founding of the Cooperative AI Foundation, on whose board I now serve."
     },
     {
       title: "Open Problems in Cooperative AI",
@@ -478,7 +478,7 @@
       cite: "Dafoe, Hughes, Bachrach, Collins, McKee, Leibo, Larson, Graepel · arXiv:2012.08630",
       cover: "img:images/paper_illustrations/open-problems-coop-ai.png",
       url: "https://arxiv.org/abs/2012.08630",
-      abstract: "The longer technical report behind the Nature comment. It lays out a research agenda for Cooperative AI across four capabilities — understanding, communication, commitment, and institutions — and the norms and infrastructure needed to study cooperation among AIs, humans, and mixed groups. Together with the Nature comment, it laid the groundwork for the Cooperative AI Foundation, where I serve on the board."
+      abstract: "The longer technical report behind the Nature comment. It lays out a research agenda for Cooperative AI across four capabilities — understanding, communication, commitment, and institutions — and the norms and scaffolding needed to study cooperation among AIs, humans, and mixed groups. Together with the Nature comment, it laid the groundwork for the Cooperative AI Foundation, where I serve on the board."
     },
     {
       title: "Private traits and attributes are predictable from digital records of human behavior",
@@ -486,7 +486,7 @@
       cite: "Kosinski, Stillwell, Graepel · PNAS 110 (15), 5802–5805",
       cover: "img:images/paper_illustrations/private-traits.jpg",
       url: "https://www.pnas.org/doi/10.1073/pnas.1218772110",
-      abstract: "Facebook Likes alone can accurately predict highly sensitive attributes — sexual orientation, ethnicity, religious and political views, personality, intelligence, substance use, age and gender — for 58,000+ volunteers. The work sparked an intense public and expert debate on online personalisation and privacy."
+      abstract: "Facebook Likes alone can predict deeply private traits — sexual orientation, ethnicity, religious and political views, personality, intelligence, substance use, age and gender — for 58,000+ volunteers. The work sparked a fierce public and expert debate on online personalisation and privacy."
     }
   ];
 
