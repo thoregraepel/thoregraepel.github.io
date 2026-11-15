@@ -441,6 +441,18 @@
 
   var OTHER = [
     {
+      title: "From cacophony to hierarchy: a principled framework for assessing AI consciousness",
+      venue: "arXiv · Book", year: 2026,
+      cite: "Chandaria, Muñoz Morán, Rosas, Seth, Shevlin, Hutter, Graepel, Bales, Comşa, Shanahan, Laukkonen, Kringelbach, Frith, Legg · arXiv:2609.35618",
+      cover: "img:images/paper_illustrations/ai-consciousness.jpg",
+      url: "https://arxiv.org/abs/2609.35618",
+      links: [
+        { label: "book", url: "https://www.amazon.com/dp/1066828490" },
+        { label: "explore the model", url: "https://ai-cognition.org/cacophony-tool/" }
+      ],
+      abstract: "Could an AI system have experiences? Rival theories of consciousness tend to talk past one another, because each places the critical ingredient at a different level of description. Led by Shamil Chandaria, we extend Marr's three levels into a five-level hierarchy of functional descriptions — from behaviour down to organism–environment coupling — locate the major theories within it, and derive indicators for each level. A Bayesian model then combines credences over theories with indicator evidence into a single calibrated probability; for current LLMs that number swings from below 0.01 to around 0.8 depending on which assumptions one adopts. Rather than a verdict, we offer structured agnosticism: explicit assumptions, evidence that updates credences, and disagreements that become precise. Also published as the book Assessing AI Consciousness: From Cacophony to Hierarchy (AIXI Media), with an interactive tool for exploring the model."
+    },
+    {
       title: "How AI is reshaping discovery in maths and physics",
       venue: "Nature", year: 2026,
       cite: "Burtsev, He, Sobko, Bhattacharya, Graepel · Nature 654 (8118), 324–326",
@@ -628,6 +640,7 @@
             '<button class="pub__toggle" type="button" aria-expanded="false">read description</button>' +
             '<a href="' + p.url + '" target="_blank" rel="noopener">paper ↗</a>' +
             (p.preprint ? '<a href="' + p.preprint + '" target="_blank" rel="noopener">preprint ↗</a>' : '') +
+            (p.links || []).map(function (l) { return '<a href="' + l.url + '" target="_blank" rel="noopener">' + escapeHTML(l.label) + ' ↗</a>'; }).join('') +
           '</div>' +
         '</div>';
 
